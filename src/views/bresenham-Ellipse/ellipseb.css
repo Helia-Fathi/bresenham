@@ -1,0 +1,8 @@
+canvas {
+    outline: 1px solid red;
+    margin: 30px;
+}
+.mycanvas{
+    display: flex;
+    justify-content: center;
+}

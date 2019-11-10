@@ -1,0 +1,17 @@
+<div>
+    <div class="mycanvas">
+        <input placeholder="enter x1" style="margin: auto 10px" v-model="xUser">
+        <input placeholder="enter y1" style="margin: auto 10px" v-model="yUser">
+        <input placeholder="enter x2" style="margin: auto 10px" v-model="xTwoUser">
+        <input placeholder="enter y2" style="margin: auto 10px" v-model="yTwoUser">
+        <button class="btn btn-success" @click="drawNewLine()">DRAW NOW!</button>
+    </div>
+    <br>
+    <div style="display:flex;justify-content: center">
+        <button class="btn btn-success" style="margin: auto 10px" @click="goToDrawEllipse()">Go To Draw Ellipse Page!</button>
+        <button class="btn btn-success" @click="goToDrawCircle()">Go To Draw Circle Page!</button>
+    </div>
+    <div class="mycanvas">
+            <canvas width=800 height=800></canvas>
+    </div>
+</div>

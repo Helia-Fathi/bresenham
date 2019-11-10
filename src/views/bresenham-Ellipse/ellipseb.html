@@ -1,0 +1,35 @@
+<div>
+
+    <div class="mycanvas">
+        <input placeholder="enter x" style="margin: auto 0px" v-model="xUser">
+        <input placeholder="enter y" style="margin: auto 10px" v-model="yUser">
+        <input placeholder="enter a" style="margin: auto 0px" v-model="aUser">
+        <input placeholder="enter b" style="margin: auto 10px" v-model="bUser">
+        <button class="btn btn-success" @click="drawEllipse()">DRAW NOW!</button>
+    </div>
+    <br>
+    <div class="mycanvas">
+        <input placeholder="enter delta for x" style="margin: auto 0px" v-model="deltaXUser">
+        <input placeholder="enter delta for y" style="margin: auto 10px" v-model="deltaYUser">
+        <button class="btn btn-success" @click="drawEllipseTransition()">TRANSITION NOW!</button>
+    </div>
+    <br>
+    <div class="mycanvas">
+        <input placeholder="enter scale for x" style="margin: auto 0px" v-model="scaleX">
+        <input placeholder="enter scale for y" style="margin: auto 10px" v-model="scaleY">
+        <button class="btn btn-success"  @click="drawEllipseScale()">SCALE NOW!</button>
+    </div>
+    <br>
+    <div  style="display: flex;justify-content: center">
+        <button class="btn btn-success" @click="drawEllipseRotate()">ROTATE NOW!</button>
+    </div>
+    <br>
+    <div style="display:flex;justify-content: center">
+        <button class="btn btn-success" style="margin: auto 10px" @click="goToDrawLine()">Go To Draw Line Page!</button>
+        <button class="btn btn-success" @click="goToDrawCircle()">Go To Draw Circle Page!</button>
+    </div>
+
+    <div class="mycanvas">
+        <canvas width=800 height=800></canvas>
+    </div>
+</div>

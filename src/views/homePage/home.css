@@ -1,0 +1,13 @@
+
+.wholePage{
+    background: #122b40;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
